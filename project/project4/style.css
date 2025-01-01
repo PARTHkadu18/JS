@@ -1,0 +1,38 @@
+body{
+    background-color: #212121;
+}
+
+.cont{
+    margin: 30px 400px;
+    background-color: grey;
+    height: 120vh;
+    width: 37.5vw;
+    text-align: center;
+    color: white;
+}
+#heading2{
+    font-size: 58px;
+}
+.heading{
+    /* text-align: center; */
+    font-size: 60px;
+    background-color: black;
+}
+
+input{
+    margin-top: 20px;
+    height: 45px;
+    width: 200px;
+    border: 3px solid #3c3434;
+}
+#subt{
+    height: 40px;
+    width: 180px;
+    border: 2px solid black;
+    border-radius: 12px;
+    color: white;
+    background-color: black;
+}
+.foot{
+    font-size: 20px;
+}
