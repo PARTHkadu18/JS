@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+  }
+  
+  .container{
+       text-align: center;
+       margin-top: 230px;
+  }
+  
+  button{
+    height: 40px;
+    width: 90px;
+  }

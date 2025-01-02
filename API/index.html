@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    body{
+      background-color: #212121;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  
+    <p id="one"></p>
+</body>
+<script>
+    const requestURL="https://api.github.com/users/hiteshchoudhary";
+    const xhr=new XMLHttpRequest();
+    let image;
+    let follower;
+    xhr.open('GET', requestURL);
+    xhr.onreadystatechange=function(){
+        if(xhr.readyState==4){
+          // const data=this.responseText
+          // console.log(typeof data);  //By default type of data will be string. We have to convert it to object
+          
+          const data=JSON.parse(this.responseText);
+          image=data.avatar_url;
+          follower=data.followers;  
+          console.log(image);
+          
+        }
+    }
+
+    xhr.send();
+</script>
+</html>
