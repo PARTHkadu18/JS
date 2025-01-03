@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+    <style>
+      body{
+          background-color: #313131;
+      }
+    </style>
+<body>
+    <button id="orange">Orange</button>
+    <button id="red">Red</button>
+    <button id="pink">Pink</button>
+    <button id="Brown">Brown</button>
+</body>
+    <script>
+        const doc=document.querySelectorAll('button');
+
+          function fun(color){
+              return function(){
+                document.body.style.backgroundColor=color;
+              }
+          }
+
+        doc.forEach((button) =>{
+            button.addEventListener('click',fun(button.id));
+        })
+            
+
+    </script>
+</html>9
